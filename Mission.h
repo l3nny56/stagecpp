@@ -47,9 +47,15 @@ public:
     Mission(const Mission& entre);
     Mission& operator = (const Mission& entre);
 
-    Mission(std::string nom);
-    void setnbPersonne(std::string deux);
+    Mission(std::string nom_de_la_mission);
+    void setnbPersonne(std::string nombre_de_personne);
     std::string getnbPersonne();
+    void setDescriptifMission(std::string descriptif_de_la_mission);
+    std::string setDescriptifMission();
+    void setNbHeure(std::string nombre_heure);
+    std::string getnbHeure();
+    void setEntrepriseMission(std::string mission_entreprise);
+    std::string getEntrepriseMission();
 
 
 
