@@ -25,6 +25,15 @@ class Mission
 
 private:
 
+    std::string nbPersonne;
+
+        
+    std::string descriptifMission;
+
+    std::string nbHeure;
+
+
+
 
 
 protected:
@@ -35,6 +44,19 @@ public:
     /*Classe sous forme canonique*/
     Mission();
     ~Mission();
+    Mission(const Mission& entre);
+    Mission& operator = (const Mission& entre);
+
+    Mission(std::string nom);
+    void setnbPersonne(std::string deux);
+    std::string getnbPersonne();
+
+
+
+
+
+
+
    
 
 };
